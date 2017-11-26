@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Neverland</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+    <!-- Material -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+    <div class="row">
+      <div class="col m4 offset-m4">
+        <div class="card">
+          <div class="card-image">
+            <span class="card-title">{{s['name']}}</span>
+            <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+          </div>
+          <div class="card-content">
+            <p>You can fly to {{flight['city']}} with Finnair! The city was a filming location of {{s['name']}}.
+            </p>
+            <h3>{{flight['price']}}€</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+	</body>
+</html>
