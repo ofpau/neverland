@@ -4,13 +4,14 @@ import json
 app = Flask(__name__)
 
 series_list = [
-        {'id':'got', 'name': 'Game of Thrones', 'img': 'got.jpeg', 'city':'LON'},
+        {'id':'got', 'name': 'Game of Thrones', 'img': 'got.jpeg', 'city':'PAR'},
         {'id': 'sv', 'name': 'Silicon Valley', 'img': 'siliconValley.jpg', 'city': 'SFO'},
         # {'id': 'br', 'name': 'Blade Runner 2049', 'img': 'bladeRunner2049.jpg'},
         {'id': 'dexter', 'name': 'Dexter', 'img': 'dexter_size.jpg', 'city': 'MIA'},
         {'id': 'suits', 'name': 'Suits', 'img': 'suits.jpg', 'city': 'YTO'},
         {'id': 'himym', 'name': 'How I Met Your Mother', 'img': 'dexter_size.jpg', 'city': 'NYC'},
-        {'id': 'hoc', 'name': 'House Of Cards', 'img': 'hoc.jpg', 'city': 'DCA'}
+        #{'id': 'hoc', 'name': 'House Of Cards', 'img': 'hoc.jpg', 'city': 'DCA'},
+        {'id':'bean', 'name': 'Mr. Bean', 'img': 'mrBean.jpg', 'city':'LHR'}
 ]
 
 @app.route("/")
