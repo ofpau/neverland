@@ -23,7 +23,7 @@
 					<div id="main">
 					 {% for s in series %}
 					 	<article class="thumb">
-							 <a href="{{s['url']}}" class="image"><img src={{s['url']}} alt="" /><p class="img_caption"> {{ s['id'] }}</p></a>
+							 <a href="{{s['name']}}" class="image"><img src={{'static/resources/' + s['img']}} alt="" /><p class="img_caption"> {{ s['id'] }}</p></a>
 							 <h2>{{s['name']}}</h2>
 						</article>
 					 {% endfor %}

@@ -9,11 +9,8 @@ def hello():
 
 @app.route("/series")
 def sesries():
-    series = [{'id':'got', 'name': 'Game of Thrones'}, {'id': 'narcos', 'name': 'Narcos'}]
+    series = [{'id':'got', 'name': 'Game of Thrones', 'img': 'got.jpeg'},
+              {'id': 'sv', 'name': 'Silicon Valley', 'img': 'silicon_valley.jpg'},
+              # {'id': 'br', 'name': 'Blade Runner 2049', 'img': 'bladeRunner2049.jpg'},
+              {'id': 'dexter', 'name': 'Dexter', 'img': 'dexter.jpg'}]
     return render_template('series.html', series=series)
-
-@app.route("/obtainLocations")
-def obtain():
-    r = requests.get('https://api.finnair.com/aws/locations/prod/all')
-    #print(r.text)
-    return r.text
