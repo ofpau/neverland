@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Neverland</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+          <header id="header">
+            Hello
+					</header>
+
+					<div id="main">
+					 {% for s in series %}
+					 	<article class="thumb">
+							 <a href="{{s['url']}}" class="image"><img src={{s['url']}} alt="" /><p class="img_caption"> {{ s['id'] }}</p></a>
+							 <h2>{{s['name']}}</h2>
+						</article>
+					 {% endfor %}
+				 </div>
+
+	</body>
+</html>
